@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -10,9 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="-166dp"
-        tools:layout_editor_absoluteY="-356dp">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
@@ -21,6 +20,35 @@
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="24sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnInsertar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSERTAR"
+            android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/btnBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BORRAR"
+            android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/btnListar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LISTAR"
+            android:layout_margin="8dp"/>
+        </LinearLayout>
 
         <ListView
             android:id="@+id/listview1"
